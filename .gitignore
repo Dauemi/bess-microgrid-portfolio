@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# Large media: share videos via LinkedIn/YouTube instead
+*.mp4
+*.mov
+
+# Node-RED credentials (never commit)
+flows_cred.json
+
+# HOMER auto-saves
+Auto Saves/
+
+.DS_Store
+Thumbs.db
