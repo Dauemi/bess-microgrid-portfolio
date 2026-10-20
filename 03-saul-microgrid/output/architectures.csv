@@ -1,0 +1,6 @@
+System,Cost/NPC ($),Cost/LCOE ($/kWh),System/Total Fuel (L/yr),System/Load Ren Frac (%)
+PV + battery + diesel,1970691,0.4176483,13106.52,89.41673
+PV + battery,3277550,0.6950583,0.0,100.0
+Battery + diesel,3394864,0.7194729,110867.6,0.0
+PV + diesel,4542706,0.9627348,140384.3,0.0
+Diesel only,4569943,0.9685071,144811.0,0.0

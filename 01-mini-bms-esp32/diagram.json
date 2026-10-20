@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "mini-bms",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "potV", "top": -140, "left": -180, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "potI", "top": -140, "left": -40, "attrs": {} },
+    { "type": "wokwi-ntc-temperature-sensor", "id": "ntc", "top": -140, "left": 120, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "potV:VCC", "esp:3V3", "red", [] ],
+    [ "potV:GND", "esp:GND.1", "black", [] ],
+    [ "potV:SIG", "esp:D34", "green", [] ],
+    [ "potI:VCC", "esp:3V3", "red", [] ],
+    [ "potI:GND", "esp:GND.1", "black", [] ],
+    [ "potI:SIG", "esp:D35", "blue", [] ],
+    [ "ntc:VCC", "esp:3V3", "red", [] ],
+    [ "ntc:GND", "esp:GND.1", "black", [] ],
+    [ "ntc:OUT", "esp:D32", "orange", [] ]
+  ]
+}
